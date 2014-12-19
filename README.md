@@ -5,7 +5,7 @@ Programming language that compiles to Go binary
 
 ## Example
 `hello.box` file
-```
+```go
 parcel main
 
 deploy "fmt"
