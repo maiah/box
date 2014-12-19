@@ -5,22 +5,22 @@ Programming language that compiles to Go binary
 
 ## Example
 `hello.box` file
-```go
+```
 parcel main
 
 deploy "fmt"
 
 cargo Message iopen
-	say() string
+  say() string
 close
 
 cargo Greeting sopen
-	name string
-	msg string
+  name string
+  msg string
 close
 
 box (g Greeting) say() string open
-	return g.msg + ", " + g.name
+  return g.msg + ", " + g.name
 close
 
 box main() open
