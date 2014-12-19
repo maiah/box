@@ -4,7 +4,7 @@ box
 Programming language that compiles to Go binary
 
 ## Example
-`hello.go` file
+`hello.box` file
 ```go
 parcel main
 
@@ -37,11 +37,11 @@ close
 
 Then execute the command below:
 ```sh
-box hello.go
+box hello.box
 ```
 
 This will create Go binary `hello` or `hello.exe` (based on your platform). Then execute the binary:
 ```sh
 hello
-Hello, Gohan
+-> Hello, Gohan
 ```
