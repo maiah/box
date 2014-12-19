@@ -3,6 +3,8 @@ box
 
 Programming language that compiles to Go binary
 
+NOTE: Currently in experimental stage!
+
 ## Example
 `hello.box` file
 ```go
@@ -45,3 +47,6 @@ This will create Go binary `hello` or `hello.exe` (based on your platform). Then
 hello
 -> Hello, Gohan
 ```
+
+## License
+MIT
