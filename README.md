@@ -30,7 +30,7 @@ box main() open
 
   go box() open
     g := Greeting open "Gohan", "Hello" close
-    c<- g.say()
+    c <- g.say()
   close()
 
   fmt.Println(<-c)
