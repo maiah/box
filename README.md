@@ -27,7 +27,7 @@ struct Greeting
   msg string
 end
 
-fun (g Greeting, a string, b string, s string) say() string
+fun (g Greeting) say() string
   return g.msg + ", " + g.name
 end
 
