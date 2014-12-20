@@ -8,13 +8,11 @@ import (
 )
 
 func main() {
-	// Read Box file
+	// Read Express file
 	file, _ := ioutil.ReadFile("hello.xps")
 	boxCode := string(file)
 
-	// Compile Box to Go
-	boxCode = strings.Replace(boxCode, "parcel", "package", -1)
-	boxCode = strings.Replace(boxCode, "deploy", "import", -1)
+	// Compile Express to Go
 	boxCode = strings.Replace(boxCode, "fun()", "func() {", -1)
 	boxCode = strings.Replace(boxCode, "end", "}", -1)
 
