@@ -1,0 +1,27 @@
+package main
+
+import "fmt"
+
+interface Message
+  say() string
+end
+
+struct Greeting
+  name string
+  msg string
+end
+
+fun (g Greeting, a string, b string, s string) say() string
+  return g.msg + ", " + g.name
+end
+
+fun main()
+  c := make(chan string)
+
+  go fun()
+    g := Greeting{"Gohan", "Hello"}
+    c <- g.say()
+  end()
+
+  fmt.Println(<-c)
+end
