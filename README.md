@@ -1,13 +1,14 @@
 express
 =======
 
-Not really a programming language that compiles to Go binary
+Not really a programming language that compiles to Go binary.
 
 NOTE: Currently in experimental stage!
 
 ## What?
-* It just removes curly-braces (`{` and `}`) to declare an `interface`, `struct`, and `func`.
-* It just remove the `type` keyword to declara an `interface` and `struct`.
+* It just removes curly-braces `{` and `}` to declare an `interface`, `struct`, and `func` and closes it with `end` keyword.
+* It just removes the `type` keyword to declare an `interface` and `struct`.
+* It just replaces `func` keyword to `fun` to declare a function.
 * Then everything is just Go ^_^
 
 ## Example
