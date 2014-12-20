@@ -1,45 +1,48 @@
-box
-===
+express
+=======
 
-Programming language that compiles to Go binary
+Not really a programming language that compiles to Go binary
 
 NOTE: Currently in experimental stage!
 
+## What?
+It just removes curly-braces and removes `type` keyword to declare `interface`s and `struct`s in Go code. Then everything is just Go ^_^
+
 ## Example
-`hello.box` file
+`hello.exp` file
 ```go
-parcel main
+package main
 
-deploy "fmt"
+import "fmt"
 
-cargo Message iopen
+interface Message
   say() string
-close
+end
 
-cargo Greeting sopen
+struct Greeting
   name string
   msg string
-close
+end
 
-box (g Greeting) say() string open
+fun (g Greeting, a string, b string, s string) say() string
   return g.msg + ", " + g.name
-close
+end
 
-box main() open
+fun main()
   c := make(chan string)
 
-  go box() open
-    g := Greeting open "Gohan", "Hello" close
+  go fun()
+    g := Greeting{"Gohan", "Hello"}
     c <- g.say()
-  close()
+  end()
 
   fmt.Println(<-c)
-close
+end
 ```
 
 Then execute the command below:
 ```sh
-box hello.box
+express hello.exp
 ```
 
 This will create Go binary `hello` or `hello.exe` (based on your platform). Then execute the binary:
