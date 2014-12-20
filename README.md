@@ -6,10 +6,12 @@ Not really a programming language that compiles to Go binary
 NOTE: Currently in experimental stage!
 
 ## What?
-It just removes curly-braces and removes `type` keyword to declare `interface`s and `struct`s in Go code. Then everything is just Go ^_^
+* It just removes curly-braces (`{` and `}`) to declare an `interface`, `struct`, and `func`.
+* It just remove the `type` keyword to declara an `interface` and `struct`.
+* Then everything is just Go ^_^
 
 ## Example
-`hello.exp` file
+`hello.xps` file
 ```go
 package main
 
@@ -40,12 +42,12 @@ fun main()
 end
 ```
 
-Then execute the command below:
+Then execute the command below to create Go binary `hello` or `hello.exe` (based on your platform). :
 ```sh
-express hello.exp
+express hello.xps
+-> hello
 ```
-
-This will create Go binary `hello` or `hello.exe` (based on your platform). Then execute the binary:
+Then execute the application:
 ```sh
 hello
 -> Hello, Gohan
