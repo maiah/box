@@ -1,6 +1,17 @@
 package main
 
-import "fmt"
+import _ "os"
+
+import
+  "fmt"
+iend
+
+var i int
+
+var
+  visitCount int
+  isAdmin bool
+vend
 
 interface Message
   say() string
@@ -24,4 +35,18 @@ fun main()
   end()
 
   fmt.Println(<-c)
+end
+
+fun andCool()
+  if s := "cooler"; s == "cooler"
+    fmt.Println(s)
+  end
+
+  if v := "colder"; v == "colder"
+    fmt.Println(v)
+  else if v == "cool"
+    fmt.Println(v)
+  else
+    fmt.Println("hot")
+  end
 end
