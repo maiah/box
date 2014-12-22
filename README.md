@@ -6,7 +6,7 @@ Not really a programming language that compiles to Go binary.
 NOTE: Currently in experimental stage!
 
 ## What?
-* It just removes curly-braces `{` and `}` to declare an `interface`, `struct`, and `func` and closes it with `end` keyword.
+* It just removes curly-braces `{` and `}` to declare an `interface`, `struct`, `func`, if-else, and for-loop and closes it with `end` keyword.
 * It just removes the `type` keyword to declare an `interface` and `struct`.
 * It just replaces `func` keyword to `fun` to declare a function.
 * Then everything is just Go ^_^
@@ -17,19 +17,6 @@ NOTE: Currently in experimental stage!
 package main
 
 import "fmt"
-
-interface Message
-  say() string
-end
-
-struct Greeting
-  name string
-  msg string
-end
-
-fun (g Greeting) say() string
-  return g.msg + ", " + g.name
-end
 
 fun main()
   c := make(chan string)
@@ -50,7 +37,7 @@ express hello.xps
 ```
 Then execute the application:
 ```sh
-hello
+./hello
 -> Hello, Gohan
 ```
 

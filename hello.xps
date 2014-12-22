@@ -50,3 +50,15 @@ fun andCool()
     fmt.Println("hot")
   end
 end
+
+fun andCooler()
+  count := 0
+  for count < 5
+    fmt.Println(count++)
+  end
+
+  for
+    fmt.Println("a loop")
+    break
+  end
+end

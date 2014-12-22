@@ -44,6 +44,10 @@ func main() {
 				ss_s = "} " + ss_s + " {"
 			} else if strings.HasPrefix(strings.TrimSpace(ss_s), "else ") {
 				ss_s = "} " + ss_s + " {"
+			} else if strings.HasPrefix(strings.TrimSpace(ss_s), "for ") {
+				ss_s = ss_s + " {"
+			} else if strings.TrimSpace(ss_s) == "for" {
+				ss_s = ss_s + " {"
 			}
 
 			lines += ss_s + "\n"
