@@ -22,8 +22,7 @@ fun main()
   c := make(chan string)
 
   go fun()
-    g := Greeting{"Gohan", "Hello"}
-    c <- g.say()
+    c <- "Hello, Gohan"
   end()
 
   fmt.Println(<-c)
