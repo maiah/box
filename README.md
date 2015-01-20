@@ -1,9 +1,9 @@
-express
+gone
 =======
 
 Not really a programming language that compiles to Go binary.
 
-NOTE: Currently in experimental stage!
+NOTE: Currently in experimental stage! Needs to have a real parser and lexer. Currently it just uses a dumb find and replace method to translate the code to a Go valid source code.
 
 ## What?
 * It just removes curly-braces `{` and `}` to declare an `interface`, `struct`, `func`, if-else, and for-loop and closes it with `end` keyword.
@@ -12,7 +12,7 @@ NOTE: Currently in experimental stage!
 * Then everything is just Go ^_^
 
 ## Example
-`hello.xps` file
+`hello.gone` file
 ```go
 package main
 
@@ -31,7 +31,7 @@ end
 
 Then execute the command below to create Go binary `hello` or `hello.exe` (based on your platform). :
 ```sh
-express hello.xps
+gone hello.gone
 -> hello
 ```
 Then execute the application:
