@@ -1,7 +1,7 @@
 gone
 =======
 
-Not really a programming language that compiles to Go binary.
+Programming language (that doesn't really exists) that compiles to Go binary.
 
 NOTE: Currently in experimental stage! Needs to have a real parser and lexer. Currently it just uses the dumb find-replace method to translate the code to a valid Go source code.
 
