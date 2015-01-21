@@ -29,7 +29,7 @@ fun main()
 end
 ```
 
-Then execute the command below to create Go binary `hello` or `hello.exe` (based on your platform). :
+Then execute the command below to create Go binary `hello` or `hello.exe` (based on your platform).
 ```sh
 gone hello.gone
 -> hello
