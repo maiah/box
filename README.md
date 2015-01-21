@@ -3,7 +3,7 @@ gone
 
 Not really a programming language that compiles to Go binary.
 
-NOTE: Currently in experimental stage! Needs to have a real parser and lexer. Currently it just uses a dumb find and replace method to translate the code to a Go valid source code.
+NOTE: Currently in experimental stage! Needs to have a real parser and lexer. Currently it just uses the dumb find-replace method to translate the code to a valid Go source code.
 
 ## What?
 * It just removes curly-braces `{` and `}` to declare an `interface`, `struct`, `func`, if-else, and for-loop and closes it with `end` keyword.
