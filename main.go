@@ -9,10 +9,10 @@ import (
 
 func main() {
 	// Read Express file
-	file, _ := ioutil.ReadFile("hello.xps")
+	file, _ := ioutil.ReadFile("hello.gone")
 	boxCode := string(file)
 
-	// Compile Express to Go
+	// Compile Gone to Go
 	boxCode = strings.Replace(boxCode, "fun()", "func() {", -1)
 	boxCode = strings.Replace(boxCode, "iend", ")", -1)
 	boxCode = strings.Replace(boxCode, "vend", ")", -1)
