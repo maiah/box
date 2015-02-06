@@ -8,14 +8,13 @@ import (
 )
 
 func main() {
-	// Read Express file
+	// Read Gone file
 	file, _ := ioutil.ReadFile("hello.gone")
 	boxCode := string(file)
 
 	// Compile Gone to Go
 	boxCode = strings.Replace(boxCode, "fun()", "func() {", -1)
-	boxCode = strings.Replace(boxCode, "iend", ")", -1)
-	boxCode = strings.Replace(boxCode, "vend", ")", -1)
+	boxCode = strings.Replace(boxCode, "done", ")", -1)
 	boxCode = strings.Replace(boxCode, "end", "}", -1)
 
 	reader := bufio.NewReader(bytes.NewBuffer([]byte(boxCode)))
@@ -47,6 +46,8 @@ func main() {
 			} else if strings.HasPrefix(strings.TrimSpace(ss_s), "for ") {
 				ss_s = ss_s + " {"
 			} else if strings.TrimSpace(ss_s) == "for" {
+				ss_s = ss_s + " {"
+			} else if strings.HasPrefix(strings.TrimSpace(ss_s), "switch ") {
 				ss_s = ss_s + " {"
 			}
 

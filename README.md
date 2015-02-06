@@ -6,7 +6,7 @@ Programming language (that doesn't really exists) that compiles to Go binary.
 NOTE: Currently in experimental stage! Needs to have a real parser and lexer. Currently it just uses the dumb find-replace method to translate the code to a valid Go source code.
 
 ## What?
-* It just removes curly-braces `{` and `}` to declare an `interface`, `struct`, `func`, if-else, and for-loop and closes it with `end` keyword.
+* It just removes curly-braces `{` and `}` to declare an `interface`, `struct`, `func`, if-else, for-loop, and switch-statement and closes it with `end` keyword.
 * It just removes the `type` keyword to declare an `interface` and `struct`.
 * It just replaces `func` keyword to `fun` to declare a function.
 * Then everything is just Go ^_^

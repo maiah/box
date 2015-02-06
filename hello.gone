@@ -4,14 +4,14 @@ import _ "os"
 
 import
   "fmt"
-iend
+done
 
 var i int
 
 var
   visitCount int
   isAdmin bool
-vend
+done
 
 interface Message
   say() string
@@ -61,5 +61,18 @@ fun andCooler()
   for
     fmt.Println("a loop")
     break
+  end
+end
+
+fun theSwitch()
+  switch os := runtime.GOOS; os
+  case "darwin":
+    fmt.Println("OS X.")
+  case "linux":
+    fmt.Println("Linux.")
+  default:
+    // freebsd, openbsd,
+    // plan9, windows...
+    fmt.Printf("%s.", os)
   end
 end
